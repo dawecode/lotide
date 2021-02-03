@@ -1,4 +1,4 @@
-const without = function(source, itemsToRemove) {
+/*const without = function(source, itemsToRemove) {
   let newArr = [];
   for (let i = 0; i < source.length; i++) {
     if (source[i] !== itemsToRemove[i]) {
@@ -8,13 +8,15 @@ const without = function(source, itemsToRemove) {
   return newArr;
 };
 //console.log(without([1, 2, 3], [1])) // => [2, 3]
-//console.log(without(["1", "2", "3"], [1, 2, "3"]))
+//console.log(without(["1", "2", "3"], [1, 2, "3"]))*/
 
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`✅ ✅ ✅ Assertion Passed: ${arr1} === ${arr2}`);
+
+// PROPER FLOW WITHOUT IS LAST 
+const assertArraysEqual = function(actual, expected) {
+  if (eqArrays(actual, expected)) {
+    console.log(`✅ ✅ ✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`🛑 🛑 🛑 Assertion Failed: ${arr1} !== ${arr2}`);
+    console.log(`🛑 🛑 🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
@@ -29,6 +31,19 @@ const eqArrays = function(arr1, arr2) {
     return true;
   }
 };
+
+const without = function(source, itemsToRemove) {
+  let newArr = [];
+  for (let i = 0; i < source.length; i++) {
+    if (source[i] !== itemsToRemove[i]) {
+      newArr.push(source[i]);
+    }
+  }
+  return newArr;
+};
+//console.log(without([1, 2, 3], [1])) // => [2, 3]
+//console.log(without(["1", "2", "3"], [1, 2, "3"]))
+
 
 
 // TEST original array not modified
