@@ -1,29 +1,29 @@
-//need to verify this tomorrow 
-const eqArrays = function (arr1, arr2) {
+
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
-    return false
+    return false;
   } else {
     for (let i = 0; i < arr1.length; i++) {
       if (arr1[i] !== arr2[i]) {
         return false;
       }
     }
-    return true 
+    return true;
   }
 };
 
-  const assertEqual = function (actual, expected) {
-    if (actual === expected) {
-      console.log(`✅ ✅ ✅ Assertion Passed: ${actual} === ${expected}`);
-    } else {
-      console.log(`🛑 🛑 🛑 Assertion Failed: ${actual} !== ${expected}`);
-    }
-  };
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`✅ ✅ ✅ Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`🛑 🛑 🛑 Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
 
-  // TEST CODE
-  assertEqual(eqArrays([1, 2, 3], [1, 2, 3, 4]), false); // should pass
-  assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // should pass
-  assertEqual(eqArrays([1, 2, 3], [1, 2, "3"]), false); // should pass
+// TEST CODE
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3, 4]), false); // should pass
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // should pass
+assertEqual(eqArrays([1, 2, 3], [1, 2, "3"]), false); // should pass
 
 /*if (arr1.length === 0 && arr2.length ===0){
     return true
