@@ -40,3 +40,5 @@ const results2 = findKey(data2, x => x.stars === 7);
 assertEqual(results2, "Pretty Woman"); // should pass
 console.log("----------");
 assertEqual(results2, "The Pelican Brief "); // should fail
+
+module.exports = findKey;

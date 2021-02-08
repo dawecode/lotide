@@ -24,3 +24,4 @@ console.log(countLetters("awesome"));
 assertEqual(countLetters('hello').l, 2);
 assertEqual(countLetters('hello').h, 1);
 assertEqual(countLetters('Catherine').e, 2);
+module.exports = countLetters;

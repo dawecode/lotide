@@ -54,3 +54,5 @@ assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
 //TEST
 assertArraysEqual(without([1, 2, 3], [1]), ([2, 3])); // should pass
+
+module.exports = without;

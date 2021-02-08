@@ -40,3 +40,5 @@ const assertArraysEqual = function(arr1, arr2) {
 assertArraysEqual(map(words, word => word[0]), ['g', 'c', 't', 'm', 't']); // should pass
 assertArraysEqual(map(words, word => word[2]), ['o', 'n', undefined, 'j', 'm']); // should pass
 assertArraysEqual(map(words, word => word[1]), ['r', 'o', 'o', 'a', 'o']); // should pass
+
+module.exports = map;

@@ -1,3 +1,5 @@
+const { builtinModules } = require("module");
+
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -55,3 +57,5 @@ assertArraysEqual(results1, [1, 2, 4, 7, 2]);// should fail
 /*[ 1, 2, 5, 7, 2 ]
 ---
 [ 'I\'ve', 'been', 'to', 'Hollywood' ]*/
+
+module.exports = takeUntil;
